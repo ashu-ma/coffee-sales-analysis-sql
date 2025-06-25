@@ -31,10 +31,12 @@ SQL Analysis (PostgreSQL)
 
 Total Revenue
 SELECT SUM(total_price) AS total_revenue FROM cofee_sales;
+
 ![Total Revenue](https://github.com/user-attachments/assets/1cbb1112-bf65-4f95-87a6-5b96888702a3)
 
 Average Order Value
 SELECT SUM(total_price) AS total_revenue FROM cofee_sales;
+
 ![Average Order Value](https://github.com/user-attachments/assets/cd17c9c5-f957-4aa6-8eb8-b7b74f5aa331)
 
 Total Items Sold
