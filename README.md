@@ -12,6 +12,7 @@ Power BI
 
 CSV Dataset (Coffee Shop Sales)
 
+
 Business Problem
 
 A coffee shop chain wants to leverage its historical sales data to:
