@@ -25,4 +25,4 @@ Pinpoint best and worst-selling products.
 
 Understand customer purchasing patterns.
 
-The goal is to make data-driven decisions to boost sales, reduce waste, and improve operational efficiency.
+The goal is to make data-driven decisions to boost sales, reduce waste, and improve operational efficiency.  
