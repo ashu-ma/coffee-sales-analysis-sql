@@ -30,9 +30,13 @@ The goal is to make data-driven decisions to boost sales, reduce waste, and impr
  SQL Analysis (PostgreSQL)
 Key Metrics
 Total Revenue:
+![Total Revenue](https://github.com/user-attachments/assets/1cbb1112-bf65-4f95-87a6-5b96888702a3)
+
 
 SELECT SUM(total_price) AS total_revenue FROM coffee_sales;
 Average Order Value:
+![Average Order Value](https://github.com/user-attachments/assets/cd17c9c5-f957-4aa6-8eb8-b7b74f5aa331)
+
 
 SELECT SUM(total_price)::numeric / COUNT(DISTINCT order_id) AS avg_order_value FROM coffee_sales;
 Total Items Sold:
