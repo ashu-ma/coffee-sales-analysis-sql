@@ -30,7 +30,9 @@ The goal is to make data-driven decisions to boost sales, reduce waste, and impr
 SQL Analysis (PostgreSQL)
 
 Total Revenue
+```
 SELECT SUM(total_price) AS total_revenue FROM cofee_sales;
+```
 
 ![Total Revenue](https://github.com/user-attachments/assets/1cbb1112-bf65-4f95-87a6-5b96888702a3)
 
