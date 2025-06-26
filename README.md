@@ -67,17 +67,17 @@ SELECT SUM(quantity) / COUNT(DISTINCT order_id) AS avg_items_per_order FROM cofe
 
 Monthly Order Trends
 SELECT to_char(order_date, 'Day') AS weekday, COUNT(DISTINCT order_id) AS orders
-FROM cofee_sales 
-GROUP BY weekday 
-ORDER BY weekday
+FROM cofee_sales
+GROUP BY weekday
+ORDER BY weekday;
 
 ![monthly order trend](https://github.com/user-attachments/assets/8b445c00-2b5d-434f-983c-bc0646f01765)
 
 
 Revenue by Category
 SELECT to_char(order_date, 'Mon') AS month, COUNT(DISTINCT order_id)
-FROM cofee_sales 
-GROUP BY month 
+FROM cofee_sales
+GROUP BY month
 ORDER BY month;
 
 ![revenue by category](https://github.com/user-attachments/assets/2ef61b61-d60a-42f5-b1ae-4e114583f299)
@@ -86,7 +86,7 @@ ORDER BY month;
 Sales by Size
 SELECT category, SUM(total_price) AS revenue,
 ROUND(SUM(total_price) * 100.0 / (SELECT SUM(total_price) FROM coffee_sales), 2) AS percentage
-FROM cofee_sales 
+FROM cofee_sales
 GROUP BY category;
 
 ![sales by size](https://github.com/user-attachments/assets/6940b18a-2d20-4e67-81a6-579b6ac8c0d0)
@@ -102,8 +102,8 @@ ORDER BY units_sold DESC;
 
 Bottom 5 Products:
 SELECT product_name, SUM(total_price) AS revenue FROM cofee_sales
-GROUP BY product_name 
-ORDER BY revenue DESC 
+GROUP BY product_name
+ORDER BY revenue DESC
 LIMIT 5;
 
 ![bottom 5 products](https://github.com/user-attachments/assets/6190c2d8-52a8-4e04-80f2-d48caf8e0443)
@@ -111,8 +111,8 @@ LIMIT 5;
 
 Monthly Order Trends
 SELECT product_name, SUM(total_price) AS revenue FROM cofee_sales
-GROUP BY product_name 
-ORDER BY revenue ASC 
+GROUP BY product_name
+ORDER BY revenue ASC
 LIMIT 5;
 
 ![peak month analysis](https://github.com/user-attachments/assets/e5e649cd-6fda-4983-b9c7-0f9f44277400)
