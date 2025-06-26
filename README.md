@@ -1,4 +1,4 @@
-Coffee Shop Sales Performance Analysis with PostgreSQL & Power BI
+**Coffee Shop Sales Performance Analysis with PostgreSQL & Power BI**
 
 Project Overview
 
